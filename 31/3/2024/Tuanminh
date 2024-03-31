@@ -1,0 +1,31 @@
+passwword = str(input("Vùng Ơi Mở Ra: "))
+while not password == "python":
+    password = str(input("Mật khẩu không đúng. Vùng ơi, mở ra: "))
+print("Xin chào!")
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+
+ans = str(input("When was Python invented? A. 1991, B. 1989, C. 1000, D. 1995: "))
+if ans == 'A':
+    print("Correct!")
+    ans1 = str(input("Who invented Python? A. Guido van Rossum, B. Dennis Ritchie, C. James Gosling, D. Bjarne Stroustrup: "))
+    if ans1 == 'A':
+        print("Correct!")
+        ans2 = str(input("Which statement in Python is used to output something onto the screen? A. print(), B. Count >>, C. def(), D. input(): "))
+        if ans2 == 'A':
+            print("Correct!")
+        else:
+            print("Wrong!")
+    else:
+        print("Wrong!")
+else:
+    print("Wrong!")
+
+
